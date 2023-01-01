@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>登入</title>
+    <title>忘記密碼</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sign-in/">
 
@@ -28,25 +28,29 @@
 <main class="form-signin w-100 m-auto">
   <form action="portfolio-overview.html">
     <img class="mb-4" src="images/o.png" alt="" width="250" height="250">
-    <h1 class="h3 mb-3 fw-normal">會員登錄</h1>
+    <h1 class="h3 mb-3 fw-normal">忘記密碼</h1>
 
     <div class="form-floating">
       <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
       <label for="floatingInput">電子信箱</label>
-    </div>
-    <div class="form-floating">
+    </div><main class="form-sign w-100 m-auto">
+    <div class="form-floating ">
       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">密碼</label>
+      <label for="floatingPassword">認證碼</label>
     </div>
-
+</main>
     <div class="checkbox mb-3">
       <label>
-        <input type="checkbox" value="remember-me"> 記住我<br>
-		<a href="la.html">申辦會員</a>  <a href="lo.html">忘記密碼</a>
+        <button type="submit" style="background-color: #FFAC12">寄送驗證碼至信箱</button><br>
+		
       </label>
     </div>
+	<div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">新密碼</label>
+    </div>
 	<br>
-    <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color: #FFAC12"<a>登錄</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" style="background-color: #FFAC12"<a>確認</button>
     <p class="mt-5 mb-3 text-muted">原 OSEP</p>
   </form>
 </main>
