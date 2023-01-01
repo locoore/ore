@@ -8,15 +8,15 @@
 		<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
 		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 	<link rel="icon" href="images/OEG.png">
-    	<title>原型商店擴增計畫</title>
-    
+    	<title data-translate="原型商店擴增計畫">原型商店擴增計畫</title>
+    <script src="js/lan.js"></script>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	  	<div id="Welcome">
 	  		<!---Start navigation Bar -->
 	    	<nav class="navbar navbar-expand-lg navbar fixed-top  navbar-light bg-light">
 		 		<a class="navbar-brand" href="#Welcome">
-    				<img src="images/OEG.png" width="50" height="50" class="d-inline-block" alt=""><strong> 原型商店擴增計畫</strong>
+    				<img src="images/OEG.png" width="50" height="50" class="d-inline-block" alt=""><strong data-translate="原型商店擴增計畫"> 原型商店擴增計畫</strong>
 		 		</a>
 		 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    		<span class="navbar-toggler-icon"></span>
@@ -24,22 +24,22 @@
 			  	<div class="collapse navbar-collapse" id="navbarText">
 			    	<ul class="navbar-nav ml-auto">
 			      		<li class="nav-item">
-			        		<a class="nav-link" href="index.html"><strong><font size="4">首頁</font></strong></a>
+			        		<a class="nav-link" href="index.html"><strong><font size="4"data-translate="首頁">首頁</font></strong></a>
 			      		</li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="https://locoore.weebly.com/"target="_blank"><strong><font size="4">合約店家</font></strong></a>
+					    	<a class="nav-link" href="https://locoore.weebly.com/"target="_blank"><strong><font size="4"data-translate="合約店家">合約店家</font></strong></a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="we.html"target="_blank"><strong><font size="4">附設餐廳</font></strong></a>
+					    	<a class="nav-link" href="we.html"target="_blank"><strong><font size="4"data-translate="附設餐廳">附設餐廳</font></strong></a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="le.html"target="_blank"><strong><font size="4">加盟</font></strong></a>
+					    	<a class="nav-link" href="le.html"target="_blank"><strong><font size="4"data-translate="加盟">加盟</font></strong></a>
 					    </li>
 					    <li class="nav-item">
-					    	<a class="nav-link" href="login.html"target="_blank"><strong><font size="4">登入</font></strong></a>
+					    	<a class="nav-link" href="login.html"target="_blank"><strong><font size="4"data-translate="登入">登入</font></strong></a>
 					    </li>
 						<li class="nav-item">
-					    	<a class="nav-link" href="https://lichongfu.github.io/my-website.github.io/"target="_blank"><strong><font size="4">看看你有多浪廢</font></strong></a>
+					    	<a class="nav-link" href="https://lichongfu.github.io/my-website.github.io/"target="_blank"><strong><font size="4"data-translate="看看你有多浪廢">看看你有多浪廢</font></strong></a>
 					    </li>
 						<li class="nav-item">
 						<form action="https://www.huf.org.tw/search" method="get" target="_blank">
@@ -47,14 +47,132 @@
 						<img src="images/sae.png">
         <input type="text" name="q"/></li>
        
-        <input type="submit" value="搜尋"/>
+        <input type="submit" data-translate="搜尋"value="搜尋"/>
     </form>
 
 						
-					    <li class="nav-item">
-					    	<a href="#" class="language" rel="it-IT"><img src="images/italy.ico" class="flag" alt="Italiano"></a>
-					    	<a href="index.html" class="language" rel="en-En"><img src="images/english.ico" class="flag" alt="English"></a>
-					    </li>
+					      <button data-translate="english-button" onclick="setLanguage('en')">English</button>
+    <button onclick="window.location.href='index.html'">繁體中文</button>
+	  <script>
+      const translations = {
+        'en': {
+          '原型商店擴增計畫': 'Original store expansion plan',
+		  ' 原型商店擴增計畫': 'Original store expansion plan',
+		  '首頁': 'Main',
+		  '合約店家': 'contract store',
+		  '附設餐廳': 'Attached restaurant',
+		  '加盟': 'Join',
+		  '登入': 'Login',
+		  '看看你有多浪廢': 'How wasteful you are',
+		  '搜尋': 'Search',
+		  '包容、平等': 'tolerance, equality',
+		  '二度就業者，重新返回職場': 'Second-time employed, returning to the workplace',
+		  '更生人，重新接軌社會': 'Rehabilitated people, reconnecting with society',
+		  '永續環保、地方創生': 'Sustainable environmental protection, local creation',
+		  '簡化包裝，食材零浪費': 'Simplify packaging, zero food waste',
+		  '文化革新，青年回流': 'Cultural innovation, return of youth',
+		  '－ 關於我們 －': '－ About us －',
+		  '何為無包裝商店？': 'What is a packaging-free store?',
+		  '  不主動提供一次性容器，商品皆以「裸裝」的方式販售，顧客需要自備容器才能購買。此外，店內商品基本上都是以重量計算，假如到無包裝商店不小心買太多，身上剛好又沒有足夠的容器時部分店家會出售紙袋、玻璃瓶等可回收再利用的容器，或以租賃的方式將容器租給顧客，形成永續利用。近一層的理念是店家希望能推廣「吃/用多少買多少」來避免食物的浪費。': 'Disposable containers are not provided proactively, and all products are sold "naked", and customers need to bring their own containers to purchase. In addition, the products in the store are basically calculated by weight. If you accidentally buy too much in an unpackaged store and you just don’t have enough containers, some stores will sell recyclable containers such as paper bags and glass bottles, or use The leasing method rents the container to the customer to form a sustainable use. The concept at the next level is that the store hopes to promote "eat/buy as much as you use" to avoid food waste.',
+		  '起源': 'Origin',
+		  '  此概念最早源於歐洲，承襲了西方國家從上個世紀末展開的環保思想，從反思當代工業產銷模式對環境造成的負擔，近而思考一個能夠減少資源浪費，能永續發展的一種營運模式。這股環保風潮席捲國際，「裸買」概念再次喚起人們關注。「裸裝購物」販售各式生活用品、食品，連店內的裝飾都採用對環境友善的原料製作，將環保理念貫徹在店內各方面。': 'This concept first originated in Europe, and inherited the environmental protection ideas developed by Western countries since the end of the last century. From reflecting on the environmental burden caused by the contemporary industrial production and sales model, to thinking about a business model that can reduce resource waste and achieve sustainable development. This trend of environmental protection has swept the world, and the concept of "naked shopping" has once again aroused peoples attention. "Naked Shopping" sells all kinds of daily necessities and food, and even the decorations in the store are made of environmentally friendly materials, implementing the concept of environmental protection in all aspects of the store.',
+		  '經營模式': 'Business model',
+		  'HE1': 'All products in the store must be purchased with their own containers, and the store will also provide paid decomposable plastic bags for consumers who do not bring containers to shop. Raising funds by shooting online promotional videos, advocating environmental protection and sustainability while enabling consumers to better understand the concept of "package-free". ">  All products in the store must be purchased with their own containers. At the same time, the store will also provide decomposable plastic bags that need to be paid for consumers who do not carry containers to shop. Raise funds by shooting online promotional videos to advocate environmental protection and sustainable At the same time, consumers can better understand the concept of "no packaging".',
+		  '面臨困境': 'face difficulties',
+		  'HE2': 'Due to the hot and humid weather in Taiwan, foods that are prone to moisture, such as tea, have to be more concerned about food safety. Therefore, stores must maintain the same room temperature throughout the day to avoid moisture. ',
+		  '－環境友善－': '－Environmental friendliness－',
+		  '「永續城市」被定義為滿足經濟、社會與環境共好」': '"Sustainable city" is defined as satisfying economic, social and environmental benefits"',
+		  '「具包容性、安全 、韌性及永續特質的城市與鄉村」': '"Inclusive, safe, resilient and sustainable cities and villages"',
+		  '「將不浪費的觀念運用在日常生活，在塑膠的需求上學習慢慢減少」': '"Apply the concept of no waste to daily life, and learn to reduce the demand for plastic slowly"',
+		  '「社區意識的凝聚，從源頭解決浪費，從自備容器的小習慣培養」': '"Cohesion of community awareness, solving waste from the source, and cultivating the small habit of bringing your own containers"',
+		  '「只買自己需要的量，少量多樣的購物能減少資源浪費」': '"Only buy the amount you need, a small amount of various shopping can reduce the waste of resources"',
+		  '－社區互動－': '－Community Interaction－',
+		  '「完備減緩調適行動，以因應氣候變遷及其影響」': '"Comprehensive Mitigation and Adaptation Actions to Address Climate Change and Its Impacts"',
+		  '「保育及永續利用海洋生態系，以確保生物多樣性並防止海洋環境劣化」': '"Conservation and sustainable use of marine ecosystems to ensure biodiversity and prevent degradation of the marine environment"',
+		  '「責任消費與生產，促進綠色經濟，確保永續消費及生產模式」': '"Responsible Consumption and Production, Promoting Green Economy, Ensuring Sustainable Consumption and Production Models"',
+		  '「合適的工作與經濟成長，促進包容且永續的經濟成長，讓每個人都有一份好工作」': '"Right jobs and economic growth, promoting inclusive and sustainable economic growth, so that everyone has a good job"',
+		  '「確保糧食安全，消除飢餓，促進永續農業」': '"Ensuring Food Security, Ending Hunger, Promoting Permaculture"',
+		  '「能源自主，本國能源高度依賴進口，未達能源充足，未達到滿足須提高自產能源比例」': '"Sustainable use, renewable energy can be recycled after consumption, less pollution and high sustainability. Compared with fossil fuels, it is an environmentally friendly energy."',
+		  '「永續利用，再生能源消耗後可再生循環，產生的污染量少、永續性高，相較化燃料是對環境友善之能源」': '"Sustainable use, renewable energy can be recycled after consumption, less pollution and high sustainability. Compared with fossil fuels, it is an environmentally friendly energy."',
+		  '「低碳排放，溫室氣體，產生溫室效應造成全球暖化，而再生能源碳排放低，太陽能及風力能於發電過程中不會產生碳排放」': '"Low carbon emissions, greenhouse gases, the greenhouse effect causes global warming, and renewable energy has low carbon emissions, solar and wind power will not produce carbon emissions in the process of power generation"',
+		  '「可再生能源實際上是當今世界大多數地區最便宜的能源選擇，可再生能源技術的价格正在迅速下降」': '"Renewable energy is actually the cheapest energy option in most parts of the world today, and prices for renewable energy technologies are falling rapidly"',
+		  '「可再生能源創造就業機會，其需要的勞力多於不可再生能源提供待業者機會回歸就業市場」': '"Renewable energy creates jobs that require more labor than non-renewable energy provides opportunities for the unemployed to return to the job market"',
+		  '－ 購物流程 －': '- shopping process -',
+		  '－能源再生－': '－Energy Regeneration－',
+		  'U商店敘無包裝商店': 'U Store say Packing-free Store',
+		  '外部': 'external',
+		  'he3': 'Original store expansion plan &copy; 2023',
+		  '組員: 侯沛堯、曾昇富、夏韻茹、陳靖薇': 'Team members: Hou Peiyao, Zeng Shengfu, Xia Yunru, Chen Jingwei',
+		
+		  
+		  
+          'english-button': 'English',
+          'french-button': 'Traditional Chinese'
+        },
+        'fr': {
+          '關於我們': 'Bonjour',
+		  '原型商店擴增計畫': '原型商店擴增計畫',
+		  ' 原型商店擴增計畫': ' 原型商店擴增計畫',
+		  '首頁': '首頁',
+		  '合約店家': '合約店家',
+		  '附設餐廳': '附設餐廳',
+		  '加盟': '加盟',
+		  '登入': '登入',
+		  '看看你有多浪廢': '看看你有多浪廢',
+		 
+		 '包容、平等': '包容、平等',
+		  '二度就業者，重新返回職場': '二度就業者，重新返回職場',
+		  '更生人，重新接軌社會': '更生人，重新接軌社會',
+		  '永續環保、地方創生': '永續環保、地方創生',
+		  '簡化包裝，食材零浪費': '簡化包裝，食材零浪費',
+		  '文化革新，青年回流': '文化革新，青年回流',
+		  '－ 關於我們 －': '－ 關於我們 －',
+		  '何為無包裝商店？': '為無包裝商店？',
+		  '  不主動提供一次性容器，商品皆以「裸裝」的方式販售，顧客需要自備容器才能購買。此外，店內商品基本上都是以重量計算，假如到無包裝商店不小心買太多，身上剛好又沒有足夠的容器時部分店家會出售紙袋、玻璃瓶等可回收再利用的容器，或以租賃的方式將容器租給顧客，形成永續利用。近一層的理念是店家希望能推廣「吃/用多少買多少」來避免食物的浪費。': '  不主動提供一次性容器，商品皆以「裸裝」的方式販售，顧客需要自備容器才能購買。此外，店內商品基本上都是以重量計算，假如到無包裝商店不小心買太多，身上剛好又沒有足夠的容器時部分店家會出售紙袋、玻璃瓶等可回收再利用的容器，或以租賃的方式將容器租給顧客，形成永續利用。近一層的理念是店家希望能推廣「吃/用多少買多少」來避免食物的浪費。',
+		  '起源': '起源',
+		  '  此概念最早源於歐洲，承襲了西方國家從上個世紀末展開的環保思想，從反思當代工業產銷模式對環境造成的負擔，近而思考一個能夠減少資源浪費，能永續發展的一種營運模式。這股環保風潮席捲國際，「裸買」概念再次喚起人們關注。「裸裝購物」販售各式生活用品、食品，連店內的裝飾都採用對環境友善的原料製作，將環保理念貫徹在店內各方面。': '  此概念最早源於歐洲，承襲了西方國家從上個世紀末展開的環保思想，從反思當代工業產銷模式對環境造成的負擔，近而思考一個能夠減少資源浪費，能永續發展的一種營運模式。這股環保風潮席捲國際，「裸買」概念再次喚起人們關注。「裸裝購物」販售各式生活用品、食品，連店內的裝飾都採用對環境友善的原料製作，將環保理念貫徹在店內各方面。.',
+		  '經營模式': '經營模式',
+		  'HE1': '  店內所有商品皆須自備容器購買，同時店家也會提供須付費的可分解塑膠袋提供未攜帶容器的消費者購物。 通過拍攝網路宣傳影片籌募資金，倡導環保與永續的同時讓消費者能更認識「無包裝」概念。',
+		  '面臨困境': 'face difficulties',
+		  'HE2': '  由於台灣天氣溼熱，易受潮的食品須更顧慮飲食安全，例如茶葉，因此店家須維持全天的相同室溫來避免受潮的情況發生。 ',
+		  '－環境友善－': '－環境友善－',
+		  '「永續城市」被定義為滿足經濟、社會與環境共好」': '「永續城市」被定義為滿足經濟、社會與環境共好」',
+		  '「具包容性、安全 、韌性及永續特質的城市與鄉村」': '「具包容性、安全 、韌性及永續特質的城市與鄉村」',
+		  '「將不浪費的觀念運用在日常生活，在塑膠的需求上學習慢慢減少」': '「將不浪費的觀念運用在日常生活，在塑膠的需求上學習慢慢減少」',
+		  '「社區意識的凝聚，從源頭解決浪費，從自備容器的小習慣培養」': '"「社區意識的凝聚，從源頭解決浪費，從自備容器的小習慣培養」',
+		  '「只買自己需要的量，少量多樣的購物能減少資源浪費」': '「只買自己需要的量，少量多樣的購物能減少資源浪費」',
+		  '－社區互動－': '－社區互動－',
+		  '「完備減緩調適行動，以因應氣候變遷及其影響」': '"「完備減緩調適行動，以因應氣候變遷及其影響」',
+		  '「保育及永續利用海洋生態系，以確保生物多樣性並防止海洋環境劣化」': '"「保育及永續利用海洋生態系，以確保生物多樣性並防止海洋環境劣化」',
+		  '「責任消費與生產，促進綠色經濟，確保永續消費及生產模式」': '"「責任消費與生產，促進綠色經濟，確保永續消費及生產模式」"',
+		  '「合適的工作與經濟成長，促進包容且永續的經濟成長，讓每個人都有一份好工作」': '"「合適的工作與經濟成長，促進包容且永續的經濟成長，讓每個人都有一份好工作」',
+		  '「確保糧食安全，消除飢餓，促進永續農業」': '「確保糧食安全，消除飢餓，促進永續農業」',
+		  '「能源自主，本國能源高度依賴進口，未達能源充足，未達到滿足須提高自產能源比例」': '「能源自主，本國能源高度依賴進口，未達能源充足，未達到滿足須提高自產能源比例」',
+		  '「永續利用，再生能源消耗後可再生循環，產生的污染量少、永續性高，相較化燃料是對環境友善之能源」': '「永續利用，再生能源消耗後可再生循環，產生的污染量少、永續性高，相較化燃料是對環境友善之能源」',
+		  '「低碳排放，溫室氣體，產生溫室效應造成全球暖化，而再生能源碳排放低，太陽能及風力能於發電過程中不會產生碳排放」': '「低碳排放，溫室氣體，產生溫室效應造成全球暖化，而再生能源碳排放低，太陽能及風力能於發電過程中不會產生碳排放」',
+		  '「可再生能源實際上是當今世界大多數地區最便宜的能源選擇，可再生能源技術的价格正在迅速下降」': '「可再生能源實際上是當今世界大多數地區最便宜的能源選擇，可再生能源技術的价格正在迅速下降」',
+		  '「可再生能源創造就業機會，其需要的勞力多於不可再生能源提供待業者機會回歸就業市場」': '「可再生能源創造就業機會，其需要的勞力多於不可再生能源提供待業者機會回歸就業市場」',
+		  '－ 購物流程 －': '－ 購物流程 －',
+		  '－能源再生－': '－能源再生－',
+		  'U商店敘無包裝商店': 'U商店敘無包裝商店',
+		  '外部': '外部',
+		  'he3': '原型商店擴增計畫 &copy; 2023',
+		  '組員: 侯沛堯、曾昇富、夏韻茹、陳靖薇': '組員: 侯沛堯、曾昇富、夏韻茹、陳靖薇',
+          'english-button': '英文',
+          'french-button': '中文'
+        }
+      };
+
+      function setLanguage(language) {
+        // Translate the text of all elements with a 'data-translate' attribute
+        const elements = document.querySelectorAll('[data-translate]');
+        for (const element of elements) {
+          const translationKey = element.getAttribute('data-translate');
+          const translatedText = translations[language][translationKey];
+          element.textContent = translatedText;
+        }
+      }
+    </script>
 				    </ul>
 				</div>
 			</nav>
@@ -70,27 +188,27 @@
 					<div class="carousel-item active">
 				    	<img class="d-block w-100 img-fluid img-slider" src="images/slider1.jpg" alt="First slide">
 				    	<div class="carousel-caption">
-						    <div class="eee">原型商店擴增計畫</div>
+						    <div class="eee"data-translate="原型商店擴增計畫">原型商店擴增計畫</div>
 							
 						</div>
 				    </div>
 				    <div class="carousel-item">
 				      	<img class="d-block w-100 img-fluid img-slider" src="images/slider2.jpg" alt="Second slide">
 				      	<div class="carousel-caption">
-						     <div class="eee">包容、平等</div>
+						     <div class="eee"data-translate="包容、平等">包容、平等</div>
 							<br>
-							<p><font size="7">二度就業者，重新返回職場</p>
-							<p>更生人，重新接軌社會</font></p>
+							<p><font size="7"data-translate="二度就業者，重新返回職場">二度就業者，重新返回職場</p>
+							<p data-translate="更生人，重新接軌社會">更生人，重新接軌社會</font></p>
 						</div>
 				    </div>
 				    <div class="carousel-item">
 				      	<img class="d-block w-100 img-fluid img-slider" src="images/slider3.jpg" alt="Third slide">
 				      	<div class="carousel-caption">
-						    <div class="eee">永續環保、地方創生</div>
+						    <div class="eee"data-translate="永續環保、地方創生">永續環保、地方創生</div>
 							<br>
-							<p><font size="7">
+							<p><font size="7"data-translate="簡化包裝，食材零浪費">
 							簡化包裝，食材零浪費</p>
-							<p>文化革新，青年回流</font></p>
+							<p data-translate="文化革新，青年回流">文化革新，青年回流</font></p>
 						</div>
 				    </div>
 				</div>
@@ -109,7 +227,7 @@
 		<div class="container">
 		 	<div class="row" id="Restaurant">
 	    		<div class="col navMenu">
-	     		 	<h1 class="text-center" >－ 關於我們 －</h1>
+	     		 	<h1 class="text-center" data-translate="－ 關於我們 －">－ 關於我們 －</h1>
 	    		</div>
   			</div>
 			
@@ -119,9 +237,9 @@
   			<div class="row bg-light" >
   				<div class="col-md-6">
 				<br>
-  					<h3><font size="6"><strong>何為無包裝商店？</strong></h3></font>
+  					<h3><font size="6"><strong data-translate="何為無包裝商店？">何為無包裝商店？</strong></h3></font>
 					<br>
-  					<p><font size="5">  不主動提供一次性容器，商品皆以「裸裝」的方式販售，顧客需要自備容器才能購買。此外，店內商品基本上都是以重量計算，假如到無包裝商店不小心買太多，身上剛好又沒有足夠的容器時部分店家會出售紙袋、玻璃瓶等可回收再利用的容器，或以租賃的方式將容器租給顧客，形成永續利用。近一層的理念是店家希望能推廣「吃/用多少買多少」來避免食物的浪費。</p>
+  					<p><font size="5"data-translate="  不主動提供一次性容器，商品皆以「裸裝」的方式販售，顧客需要自備容器才能購買。此外，店內商品基本上都是以重量計算，假如到無包裝商店不小心買太多，身上剛好又沒有足夠的容器時部分店家會出售紙袋、玻璃瓶等可回收再利用的容器，或以租賃的方式將容器租給顧客，形成永續利用。近一層的理念是店家希望能推廣「吃/用多少買多少」來避免食物的浪費。">  不主動提供一次性容器，商品皆以「裸裝」的方式販售，顧客需要自備容器才能購買。此外，店內商品基本上都是以重量計算，假如到無包裝商店不小心買太多，身上剛好又沒有足夠的容器時部分店家會出售紙袋、玻璃瓶等可回收再利用的容器，或以租賃的方式將容器租給顧客，形成永續利用。近一層的理念是店家希望能推廣「吃/用多少買多少」來避免食物的浪費。</p>
   					</font>
   				</div>
   				<div class="col-md-6" data-aos="fade-up">
@@ -146,9 +264,9 @@
   					<img class="img-fluid " src="images/so.jpg">
   				</div>
   				<div class="col-md-6 order-md-12 order-1">
-  					<h3><font size="6"><strong>起源</strong></h3></font>
+  					<h3><font size="6"><strong data-translate="起源">起源</strong></h3></font>
 					<br>
-  					<p><font size="5">  此概念最早源於歐洲，承襲了西方國家從上個世紀末展開的環保思想，從反思當代工業產銷模式對環境造成的負擔，近而思考一個能夠減少資源浪費，能永續發展的一種營運模式。這股環保風潮席捲國際，「裸買」概念再次喚起人們關注。「裸裝購物」販售各式生活用品、食品，連店內的裝飾都採用對環境友善的原料製作，將環保理念貫徹在店內各方面。</p>
+  					<p><font size="5"data-translate="  此概念最早源於歐洲，承襲了西方國家從上個世紀末展開的環保思想，從反思當代工業產銷模式對環境造成的負擔，近而思考一個能夠減少資源浪費，能永續發展的一種營運模式。這股環保風潮席捲國際，「裸買」概念再次喚起人們關注。「裸裝購物」販售各式生活用品、食品，連店內的裝飾都採用對環境友善的原料製作，將環保理念貫徹在店內各方面。">  此概念最早源於歐洲，承襲了西方國家從上個世紀末展開的環保思想，從反思當代工業產銷模式對環境造成的負擔，近而思考一個能夠減少資源浪費，能永續發展的一種營運模式。這股環保風潮席捲國際，「裸買」概念再次喚起人們關注。「裸裝購物」販售各式生活用品、食品，連店內的裝飾都採用對環境友善的原料製作，將環保理念貫徹在店內各方面。</p>
   					</font>
   				</div>
   			</div>
@@ -162,9 +280,9 @@
   			<div class="row bg-light" >
   				<div class="col-md-6">
 				<br>
-  					<h3><font size="6"><strong>經營模式</strong></h3></font>
+  					<h3><font size="6"><strong data-translate="經營模式">經營模式</strong></h3></font>
 					<br>
-  					<p><font size="5">  店內所有商品皆須自備容器購買，同時店家也會提供須付費的可分解塑膠袋提供未攜帶容器的消費者購物。 通過拍攝網路宣傳影片籌募資金，倡導環保與永續的同時讓消費者能更認識「無包裝」概念。</p>
+  					<p><font size="5" data-translate="HE1">  店內所有商品皆須自備容器購買，同時店家也會提供須付費的可分解塑膠袋提供未攜帶容器的消費者購物。 通過拍攝網路宣傳影片籌募資金，倡導環保與永續的同時讓消費者能更認識「無包裝」概念。</p>
   					</font>
   				</div>
   				<div class="col-md-6" data-aos="fade-up">
@@ -187,8 +305,8 @@
   					<img class="img-fluid " src="images/so.jpg">
   				</div>
   				<div class="col-md-6 order-md-12 order-1">
-  					<h3><font size="6"><strong>面臨困境</strong></font></h3>
-  					<p><font size="5">  由於台灣天氣溼熱，易受潮的食品須更顧慮飲食安全，例如茶葉，因此店家須維持全天的相同室溫來避免受潮的情況發生。</p>
+  					<h3><font size="6"><strong data-translate="面臨困境">面臨困境</strong></font></h3>
+  					<p><font size="5" data-translate="HE2">  由於台灣天氣溼熱，易受潮的食品須更顧慮飲食安全，例如茶葉，因此店家須維持全天的相同室溫來避免受潮的情況發生。</p>
   					</font>
   				</div>
   			</div>
@@ -201,7 +319,7 @@
 	<br>
 	<br>
 	<br>
-	<h1 class="text-center" >U商店敘無包裝商店</h1>
+	<h1 class="text-center" data-translate="U商店敘無包裝商店">U商店敘無包裝商店</h1>
     <section>
       <div id="video-section" data-stellar-background-ratio="0">
         <div class="container">
@@ -221,7 +339,7 @@
   			<!--- Start of Menu-->
 			<div class="row" id="Menu">
 				<div class="col navMenu">
-	     		 	<h1 class="text-center" >－永續－</h1>
+	     		 	<h1 class="text-center" >－SDGs11－</h1>
 					<p style="text-align: center;"><img src="images/re.png" width="150"></p>
 				</div>
 			</div>
@@ -232,13 +350,13 @@
 					<div class="card view zoom">
   						<img class="card-img-top img-fluid " src="images/meat-menu.jpg">
 					  	<div class="card-body">
-					  		<h5 class="card-title">－環境友善－</h5>
+					  		<h5 class="card-title"data-translate="－環境友善－">－環境友善－</h5>
 					    	<ul class="list-group list-group-flush">
-							    <li class="list-group-item">「永續城市」被定義為滿足經濟、社會與環境共好」</li>
-							    <li class="list-group-item">「具包容性、安全 、韌性及永續特質的城市與鄉村」</li>
-							 	<li class="list-group-item">「將不浪費的觀念運用在日常生活，在塑膠的需求上學習慢慢減少」</li>
-							 	<li class="list-group-item">「社區意識的凝聚，從源頭解決浪費，從自備容器的小習慣培養」</li>
-							 	<li class="list-group-item">「只買自己需要的量，少量多樣的購物能減少資源浪費」</li>
+							    <li class="list-group-item"data-translate="「永續城市」被定義為滿足經濟、社會與環境共好」">「永續城市」被定義為滿足經濟、社會與環境共好」</li>
+							    <li class="list-group-item"data-translate="「具包容性、安全 、韌性及永續特質的城市與鄉村」">「具包容性、安全 、韌性及永續特質的城市與鄉村」</li>
+							 	<li class="list-group-item"data-translate="「將不浪費的觀念運用在日常生活，在塑膠的需求上學習慢慢減少」">「將不浪費的觀念運用在日常生活，在塑膠的需求上學習慢慢減少」</li>
+							 	<li class="list-group-item"data-translate="「社區意識的凝聚，從源頭解決浪費，從自備容器的小習慣培養」">「社區意識的凝聚，從源頭解決浪費，從自備容器的小習慣培養」</li>
+							 	<li class="list-group-item"data-translate="「只買自己需要的量，少量多樣的購物能減少資源浪費」">「只買自己需要的量，少量多樣的購物能減少資源浪費」</li>
 							</ul>
 					  	</div>
 					</div>
@@ -247,13 +365,13 @@
 					<div class="card">
   						<img class="card-img-top img-fluid " src="images/fish-menu.jpg">
 					  	<div class="card-body">
-					  		<h5 class="card-title">－社區互動－</h5>
+					  		<h5 class="card-title"data-translate="－社區互動－">－社區互動－</h5>
 					    	<ul class="list-group list-group-flush">
-							    <li class="list-group-item">「完備減緩調適行動，以因應氣候變遷及其影響」</li>
-							    <li class="list-group-item">「保育及永續利用海洋生態系，以確保生物多樣性並防止海洋環境劣化」</li>
-							 	<li class="list-group-item">「責任消費與生產，促進綠色經濟，確保永續消費及生產模式」</li>
-							 	<li class="list-group-item">「合適的工作與經濟成長，促進包容且永續的經濟成長，讓每個人都有一份好工作」</li>
-							 	<li class="list-group-item">「確保糧食安全，消除飢餓，促進永續農業」</li>
+							    <li class="list-group-item"data-translate="「完備減緩調適行動，以因應氣候變遷及其影響」">「完備減緩調適行動，以因應氣候變遷及其影響」</li>
+							    <li class="list-group-item"data-translate="「保育及永續利用海洋生態系，以確保生物多樣性並防止海洋環境劣化」">「保育及永續利用海洋生態系，以確保生物多樣性並防止海洋環境劣化」</li>
+							 	<li class="list-group-item"data-translate="「責任消費與生產，促進綠色經濟，確保永續消費及生產模式」">「責任消費與生產，促進綠色經濟，確保永續消費及生產模式」</li>
+							 	<li class="list-group-item"data-translate="「合適的工作與經濟成長，促進包容且永續的經濟成長，讓每個人都有一份好工作」">「合適的工作與經濟成長，促進包容且永續的經濟成長，讓每個人都有一份好工作」</li>
+							 	<li class="list-group-item"data-translate="「確保糧食安全，消除飢餓，促進永續農業」">「確保糧食安全，消除飢餓，促進永續農業」</li>
 							</ul>
 					  	</div>
 					</div>
@@ -262,13 +380,13 @@
 					<div class="card">
   						<img class="card-img-top img-fluid" src="images/menu-vegetarian.jpg">
 					  	<div class="card-body">
-					  		<h5 class="card-title">－能源再生－</h5>
+					  		<h5 class="card-title"data-translate="－能源再生－">－能源再生－</h5>
 					    	<ul class="list-group list-group-flush">
-							    <li class="list-group-item">「能源自主，本國能源高度依賴進口，未達能源充足，未達到滿足須提高自產能源比例」</li>
-							    <li class="list-group-item">「永續利用，再生能源消耗後可再生循環，產生的污染量少、永續性高，相較化燃料是對環境友善之能源」</li>
-							 	<li class="list-group-item">「低碳排放，溫室氣體，產生溫室效應造成全球暖化，而再生能源碳排放低，太陽能及風力能於發電過程中不會產生碳排放」</li>
-							 	<li class="list-group-item">「可再生能源實際上是當今世界大多數地區最便宜的能源選擇，可再生能源技術的价格正在迅速下降」</li>
-							 	<li class="list-group-item">「可再生能源創造就業機會，其需要的勞力多於不可再生能源提供待業者機會回歸就業市場」</li>
+							    <li class="list-group-item"data-translate="「能源自主，本國能源高度依賴進口，未達能源充足，未達到滿足須提高自產能源比例」">「能源自主，本國能源高度依賴進口，未達能源充足，未達到滿足須提高自產能源比例」</li>
+							    <li class="list-group-item"data-translate="「永續利用，再生能源消耗後可再生循環，產生的污染量少、永續性高，相較化燃料是對環境友善之能源」">「永續利用，再生能源消耗後可再生循環，產生的污染量少、永續性高，相較化燃料是對環境友善之能源」</li>
+							 	<li class="list-group-item"data-translate="「低碳排放，溫室氣體，產生溫室效應造成全球暖化，而再生能源碳排放低，太陽能及風力能於發電過程中不會產生碳排放」">「低碳排放，溫室氣體，產生溫室效應造成全球暖化，而再生能源碳排放低，太陽能及風力能於發電過程中不會產生碳排放」</li>
+							 	<li class="list-group-item"data-translate="「可再生能源實際上是當今世界大多數地區最便宜的能源選擇，可再生能源技術的价格正在迅速下降」">「可再生能源實際上是當今世界大多數地區最便宜的能源選擇，可再生能源技術的价格正在迅速下降」</li>
+							 	<li class="list-group-item"data-translate="「可再生能源創造就業機會，其需要的勞力多於不可再生能源提供待業者機會回歸就業市場」">「可再生能源創造就業機會，其需要的勞力多於不可再生能源提供待業者機會回歸就業市場」</li>
 							</ul>
 					  	</div>
 					</div>
@@ -278,7 +396,7 @@
 			<!--- Start of Reservation-->
 			<div class="row" id="Reservation">
 				<div class="col navMenu">
-	     		 	<h1 class="text-center">－ 購物流程 －</h1>
+	     		 	<h1 class="text-center"data-translate="－ 購物流程 －">－ 購物流程 －</h1>
 				</div>
 			</div>
 			<div class="row">
@@ -305,13 +423,13 @@
 			
 			<div class="row footer bg-light">
 				<div class="col">
-					<p class="text-center">插機器人: <!--- LINE圖片 --><a href="https://www.huf.org.tw/"><img src="images/linee.png" height="25" width="25"></a></p>
+					<p class="text-center"data-translate="外部">外部: <!--- LINE圖片 --><a href="https://www.huf.org.tw/"><img src="images/linee.png" height="25" width="25"></a></p>
 				</div>
 				<div class="col">
-					<p class="text-center">原型商店擴增計畫 &copy; 2023</p>
+					<p class="text-center"data-translate="he3">原型商店擴增計畫 &copy; 2023</p>
 				</div>
 				<div class="col">
-					<p class="text-center">組員: 侯沛堯、曾昇富、夏韻茹、陳靖薇</p>
+					<p class="text-center"data-translate="組員: 侯沛堯、曾昇富、夏韻茹、陳靖薇">組員: 侯沛堯、曾昇富、夏韻茹、陳靖薇</p>
 				</div>
 			</div>
 		</div>

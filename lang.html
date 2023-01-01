@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Language Switcher</title>
+  </head>
+  <body>
+    <h1 data-translate="hello">Hello</h1>
+    <button data-translate="english-button" onclick="setLanguage('en')">English</button>
+    <button data-translate="french-button" onclick="setLanguage('fr')">French</button>
+    <script>
+      const translations = {
+        'en': {
+          'hello': 'Hello',
+          'english-button': 'English',
+          'french-button': 'French'
+        },
+        'fr': {
+          'hello': 'Bonjour',
+          'english-button': 'Anglais',
+          'french-button': 'Français'
+        }
+      };
+
+      function setLanguage(language) {
+        // Translate the text of all elements with a 'data-translate' attribute
+        const elements = document.querySelectorAll('[data-translate]');
+        for (const element of elements) {
+          const translationKey = element.getAttribute('data-translate');
+          const translatedText = translations[language][translationKey];
+          element.textContent = translatedText;
+        }
+      }
+    </script>
+  </body>
+</html>
+This HTML file includes a h1 element with a data-translate attribute and two buttons with data-translate attributes. The JavaScript code defines a translations object that contains the translations for each language, and a setLanguage() function that looks up the translated text for each element with a data-translate attribute and updates the text of the element.
+
+When the user clicks on the "English" or "French" button, the setLanguage() function is called with the appropriate language code, and the text on the page is updated to the translated strings.
+
+
+
+
